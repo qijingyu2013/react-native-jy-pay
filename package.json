@@ -1,0 +1,28 @@
+{
+  "name": "react-native-jy-pay",
+  "version": "1.5.0",
+  "description": "银联、微信和支付宝支付的react-native模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "rn",
+    "wechat",
+    "alipay",
+    "union",
+    "pay",
+
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qijingyu2013/react-native-jy-pay.git"
+  },
+  "author": "jingyu.qi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qijingyu2013/react-native-jy-pay/issues"
+  },
+  "homepage": "https://github.com/qijingyu2013/react-native-jy-pay#readme"
+}
