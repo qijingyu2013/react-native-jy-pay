@@ -22,14 +22,14 @@ $ react-native link react-native-jy-pay
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-jy-pay` and add `RNPutiPay.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNPutiPay.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+2. Go to `node_modules` ➜ `react-native-jy-pay` and add `RNJYPay.xcodeproj`
+3. In XCode, in the project navigator, select your project. Add `libRNJYPay.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-   - Add `import com.puti.paylib.PayReactPackage;` to the imports at the top of the file
+   - Add `import com.jy.paylib.PayReactPackage;` to the imports at the top of the file
    - Add `new PayReactPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
 
@@ -48,7 +48,7 @@ $ react-native link react-native-jy-pay
 #### iOS
 
 1. (使用pod管理则不需要这一步)TARGET -> Build Phases -> Linked Binary With Libraries 添加以下系统库
-![image](https://github.com/puti94/react-native-jy-pay/blob/master/screenshot/WX20171125-142402.png)
+![image](https://github.com/qijingyu2003/react-native-jy-pay/blob/master/screenshot/WX20171125-142402.png)
 
 2. 在项目中的info.plist中加入应用白名单，右键info.plist选择source code打开(plist具体设置在Build Setting -> Packaging -> Info.plist File可获取plist路径) :
 
@@ -66,7 +66,7 @@ $ react-native link react-native-jy-pay
 
 3. 设置 URL Scheme URL Scheme是通过系统找到并跳转对应app的设置，通过向项目中的info.plist文件中加入URL types可使用第三方平台所注册的appkey信息向系统注册你的app，当跳转到第三方应用支付后，可直接跳转回你的app。微信填写微信ID,支付宝也建议添加ap+加支付宝应用id的形式以免冲突。
 
-   ![image](https://github.com/puti94/react-native-jy-pay/blob/master/screenshot/WX20171125-142504.png)
+   ![image](https://github.com/qijingyu2003/react-native-jy-pay/blob/master/screenshot/WX20171125-142504.png)
 
 4. 在入口文件AppDelegate.m下设置回调
 
@@ -88,7 +88,7 @@ $ react-native link react-native-jy-pay
 
 #### Android
 
-在包名目录下创建wxapi文件夹，新建一个名为`WXPayEntryActivity`的activity继承 `com.puti.paylib`包名下的`XWXPayEntryActivity`。
+在包名目录下创建wxapi文件夹，新建一个名为`WXPayEntryActivity`的activity继承 `com.jy.paylib`包名下的`XWXPayEntryActivity`。
 
 ```
 
@@ -148,7 +148,7 @@ $ react-native link react-native-jy-pay
 该项目是基于react-native-puti-pay的基础上添加了union pay,在此感谢puti94的开源共享.
 
 
-[示例](https://github.com/puti94/RNExample/blob/master/src/pages/PayPage.js)
+[示例](https://github.com/qijingyu2003/RNExample/blob/master/src/pages/PayPage.js)
 此项目已经集成好，可以参照上面支付例子，如果调用支付跳转到了微信支付宝，不管支付成不成功也跳转回来并有相应的回调则说明已经集成成功了，若支付失败就是所传入参数的问题(你可以强势甩锅给后端开发人员了)
 由于之前项目原因，只需要微信支付宝支付，所有就写了这个插件，此项目比较适用于只需要微信支付宝支付功能，或者微信支付宝分享登录等功能已由其它第三方聚合平台（友盟）等完成。如需单独集成，
 建议微信使用[react-native-wechat](https://github.com/yorkie/react-native-wechat)，
@@ -158,7 +158,7 @@ $ react-native link react-native-jy-pay
 1. 安卓微信支付时跳转到微信了然后闪退
    这是不熟悉安卓人员经常遇到的坑，这是安卓的签名机制问题，安卓签名跟微信后台应用配置的签名不匹配，微信判定应用非法直接退出。
    如果出现这个问题，修改签名并且`清理微信的数据`(微信有缓存，需要直接清理数据，或者卸载重装，或者换台手机)
-   要想一劳永逸避免这个问题 参考此[配置项](https://github.com/puti94/RNExample/blob/master/android/app/build.gradle)将debug签名以及release签名同步
+   要想一劳永逸避免这个问题 参考此[配置项](https://github.com/qijingyu2003/RNExample/blob/master/android/app/build.gradle)将debug签名以及release签名同步
 
    ```
    debug  {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNPutiPay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNPutiPay.m */; };
+		B3E7B58A1CC2AC0600A0062D /* RNJYPay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNJYPay.m */; };
 		C520E29621BAB60400769D4D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C520E29221BAB60300769D4D /* libWeChatSDK.a */; };
 		C520E31521BAC01100769D4D /* AlipaySDK in Frameworks */ = {isa = PBXBuildFile; fileRef = C520E31421BAC01100769D4D /* AlipaySDK */; };
 /* End PBXBuildFile section */
@@ -25,37 +25,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNPutiPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPutiPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNPutiPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPutiPay.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNPutiPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPutiPay.m; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNJYPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNJYPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5881CC2AC0600A0062D /* RNJYPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNJYPay.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNJYPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNJYPay.m; sourceTree = "<group>"; };
 		C520E29221BAB60300769D4D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		C520E29321BAB60300769D4D /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		C520E29421BAB60400769D4D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		C520E29521BAB60400769D4D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		C520E2EB21BABFDE00769D4D /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		C520E2ED21BABFDE00769D4D /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		C520E2EE21BABFDE00769D4D /* RNPutiPay.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = RNPutiPay.xcworkspace; sourceTree = "<group>"; };
-		C520E2EF21BABFDE00769D4D /* RNPutiPay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPutiPay.m; sourceTree = "<group>"; };
+		C520E2EE21BABFDE00769D4D /* RNJYPay.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = RNJYPay.xcworkspace; sourceTree = "<group>"; };
+		C520E2EF21BABFDE00769D4D /* RNJYPay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNJYPay.m; sourceTree = "<group>"; };
 		C520E2F021BABFDE00769D4D /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		C520E2F121BABFDE00769D4D /* RNPutiPay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RNPutiPay.xcodeproj; sourceTree = "<group>"; };
+		C520E2F121BABFDE00769D4D /* RNJYPay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RNJYPay.xcodeproj; sourceTree = "<group>"; };
 		C520E2F421BABFDE00769D4D /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		C520E2F521BABFDE00769D4D /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		C520E2F621BABFDE00769D4D /* WechatAuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		C520E2F721BABFDE00769D4D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		C520E2F821BABFDE00769D4D /* RNPutiPay.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RNPutiPay.podspec; sourceTree = "<group>"; };
+		C520E2F821BABFDE00769D4D /* RNJYPay.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RNJYPay.podspec; sourceTree = "<group>"; };
 		C520E2F921BABFDE00769D4D /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		C520E2FA21BABFDE00769D4D /* RNPutiPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPutiPay.h; sourceTree = "<group>"; };
+		C520E2FA21BABFDE00769D4D /* RNJYPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNJYPay.h; sourceTree = "<group>"; };
 		C520E2FB21BABFDE00769D4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C520E2FC21BABFDE00769D4D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C520E2FD21BABFDE00769D4D /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		C520E2FF21BABFDE00769D4D /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
 		C520E30221BABFDE00769D4D /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
-		C520E30621BABFDE00769D4D /* RNPutiPayModule.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = RNPutiPayModule.java; sourceTree = "<group>"; };
-		C520E30721BABFDE00769D4D /* RNPutiPayPackage.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = RNPutiPayPackage.java; sourceTree = "<group>"; };
+		C520E30621BABFDE00769D4D /* RNJYPayModule.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = RNJYPayModule.java; sourceTree = "<group>"; };
+		C520E30721BABFDE00769D4D /* RNJYPayPackage.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = RNJYPayPackage.java; sourceTree = "<group>"; };
 		C520E30821BABFDE00769D4D /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		C520E30B21BABFDE00769D4D /* profiles_settings.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = profiles_settings.xml; sourceTree = "<group>"; };
 		C520E30C21BABFDE00769D4D /* markdown-navigator.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "markdown-navigator.xml"; sourceTree = "<group>"; };
-		C520E30E21BABFDE00769D4D /* react-native-puti-pay.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "react-native-puti-pay.iml"; sourceTree = "<group>"; };
+		C520E30E21BABFDE00769D4D /* react-native-jy-pay.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "react-native-jy-pay.iml"; sourceTree = "<group>"; };
 		C520E30F21BABFDE00769D4D /* workspace.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = workspace.xml; sourceTree = "<group>"; };
 		C520E31021BABFDE00769D4D /* modules.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
 		C520E31121BABFDE00769D4D /* misc.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = misc.xml; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNPutiPay.a */,
+				134814201AA4EA6300B7C361 /* libRNJYPay.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,8 +92,8 @@
 				C520E29321BAB60300769D4D /* WechatAuthSDK.h */,
 				C520E29521BAB60400769D4D /* WXApi.h */,
 				C520E29421BAB60400769D4D /* WXApiObject.h */,
-				B3E7B5881CC2AC0600A0062D /* RNPutiPay.h */,
-				B3E7B5891CC2AC0600A0062D /* RNPutiPay.m */,
+				B3E7B5881CC2AC0600A0062D /* RNJYPay.h */,
+				B3E7B5891CC2AC0600A0062D /* RNJYPay.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				C520E2E921BABFDE00769D4D /* Frameworks */,
 			);
@@ -105,12 +105,12 @@
 				C520E31421BAC01100769D4D /* AlipaySDK */,
 				C520E31321BABFDE00769D4D /* AlipaySDK.bundle */,
 				C520E31221BABFDE00769D4D /* AlipaySDK.framework */,
-				C520E2EA21BABFDE00769D4D /* react-native-puti-pay */,
+				C520E2EA21BABFDE00769D4D /* react-native-jy-pay */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C520E2EA21BABFDE00769D4D /* react-native-puti-pay */ = {
+		C520E2EA21BABFDE00769D4D /* react-native-jy-pay */ = {
 			isa = PBXGroup;
 			children = (
 				C520E2EB21BABFDE00769D4D /* index.js */,
@@ -122,7 +122,7 @@
 				C520E30821BABFDE00769D4D /* .gitattributes */,
 				C520E30921BABFDE00769D4D /* .idea */,
 			);
-			name = "react-native-puti-pay";
+			name = "react-native-jy-pay";
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -130,17 +130,17 @@
 			isa = PBXGroup;
 			children = (
 				C520E2ED21BABFDE00769D4D /* AlipaySDK.bundle */,
-				C520E2EE21BABFDE00769D4D /* RNPutiPay.xcworkspace */,
-				C520E2EF21BABFDE00769D4D /* RNPutiPay.m */,
+				C520E2EE21BABFDE00769D4D /* RNJYPay.xcworkspace */,
+				C520E2EF21BABFDE00769D4D /* RNJYPay.m */,
 				C520E2F021BABFDE00769D4D /* WXApi.h */,
-				C520E2F121BABFDE00769D4D /* RNPutiPay.xcodeproj */,
+				C520E2F121BABFDE00769D4D /* RNJYPay.xcodeproj */,
 				C520E2F421BABFDE00769D4D /* WXApiObject.h */,
 				C520E2F521BABFDE00769D4D /* README.txt */,
 				C520E2F621BABFDE00769D4D /* WechatAuthSDK.h */,
 				C520E2F721BABFDE00769D4D /* libWeChatSDK.a */,
-				C520E2F821BABFDE00769D4D /* RNPutiPay.podspec */,
+				C520E2F821BABFDE00769D4D /* RNJYPay.podspec */,
 				C520E2F921BABFDE00769D4D /* AlipaySDK.framework */,
-				C520E2FA21BABFDE00769D4D /* RNPutiPay.h */,
+				C520E2FA21BABFDE00769D4D /* RNJYPay.h */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -195,8 +195,8 @@
 		C520E30521BABFDE00769D4D /* reactlibrary */ = {
 			isa = PBXGroup;
 			children = (
-				C520E30621BABFDE00769D4D /* RNPutiPayModule.java */,
-				C520E30721BABFDE00769D4D /* RNPutiPayPackage.java */,
+				C520E30621BABFDE00769D4D /* RNJYPayModule.java */,
+				C520E30721BABFDE00769D4D /* RNJYPayPackage.java */,
 			);
 			path = reactlibrary;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				C520E30A21BABFDE00769D4D /* markdown-navigator */,
 				C520E30C21BABFDE00769D4D /* markdown-navigator.xml */,
 				C520E30D21BABFDE00769D4D /* inspectionProfiles */,
-				C520E30E21BABFDE00769D4D /* react-native-puti-pay.iml */,
+				C520E30E21BABFDE00769D4D /* react-native-jy-pay.iml */,
 				C520E30F21BABFDE00769D4D /* workspace.xml */,
 				C520E31021BABFDE00769D4D /* modules.xml */,
 				C520E31121BABFDE00769D4D /* misc.xml */,
@@ -233,9 +233,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNPutiPay */ = {
+		58B511DA1A9E6C8500147676 /* RNJYPay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNPutiPay" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNJYPay" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -245,9 +245,9 @@
 			);
 			dependencies = (
 			);
-			name = RNPutiPay;
+			name = RNJYPay;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNPutiPay.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNJYPay.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNPutiPay" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNJYPay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,12 +277,12 @@
 			projectReferences = (
 				{
 					ProductGroup = C520E2F221BABFDE00769D4D /* Products */;
-					ProjectRef = C520E2F121BABFDE00769D4D /* RNPutiPay.xcodeproj */;
+					ProjectRef = C520E2F121BABFDE00769D4D /* RNJYPay.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNPutiPay */,
+				58B511DA1A9E6C8500147676 /* RNJYPay */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNPutiPay.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNJYPay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +398,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNPutiPay;
+				PRODUCT_NAME = RNJYPay;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -421,7 +421,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNPutiPay;
+				PRODUCT_NAME = RNJYPay;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -429,7 +429,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNPutiPay" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNJYPay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNPutiPay" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNJYPay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

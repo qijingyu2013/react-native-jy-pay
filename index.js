@@ -1,8 +1,7 @@
 /**
- * User: puti.
- * Time: 2017/11/23 下午3:13.
- * GitHub:https://github.com/puti94
- * Email:1059592160@qq.com
+ * User: qijingyu
+ * GitHub:https://github.com/qijingyu2003
+ * Email:qijingyu2009@gmail.com
  */
 import {NativeModules, Platform} from 'react-native'
 
@@ -14,7 +13,7 @@ export default class XPay {
      * @param callback    支付宝回调结果  详情见 https://docs.open.alipay.com/204/105301
      */
     static alipay(orderInfo, callback) {
-        NativeModules.PutiPay.alipay(orderInfo, callback)
+        NativeModules.JYPay.alipay(orderInfo, callback)
     }
 
 
@@ -23,7 +22,7 @@ export default class XPay {
      * @param id
      */
     static setWxId(id) {
-        NativeModules.PutiPay.setWxId(id);
+        NativeModules.JYPay.setWxId(id);
     }
 
     /**
@@ -32,7 +31,7 @@ export default class XPay {
      */
     static setAlipayScheme(scheme) {
        if (Platform.OS === 'ios')
-            NativeModules.PutiPay.setAlipayScheme(scheme);
+            NativeModules.JYPay.setAlipayScheme(scheme);
     }
 
     /**
@@ -41,7 +40,7 @@ export default class XPay {
     */
     static setAlipaySandbox(isSandBox) {
         if (Platform.OS === 'android')
-            NativeModules.PutiPay.setAlipaySandbox(isSandBox);
+            NativeModules.JYPay.setAlipaySandbox(isSandBox);
     }
 
     /**
@@ -63,6 +62,29 @@ export default class XPay {
      *                          -2: 原因 用户取消,无需处理。发生场景：用户不支付了，点击取消，返回APP
      */
     static wxPay(params, callBack) {
-        NativeModules.PutiPay.wxPay(params, callBack)
+        NativeModules.JYPay.wxPay(params, callBack)
     }
+
+    /**
+     * 银联支付
+     * 传入参数示例
+     * {
+        partnerId:data.partnerId,
+        prepayId: data.prepayId,
+        packageValue: data.data.packageValue,
+        nonceStr: data.data.nonceStr,
+        timeStamp: data.data.timeStamp,
+        sign: data.data.sign,
+       }
+     *
+     *
+     * @param params  参数
+     * @param callBack 回调结果码 0:支付成功,
+     *                          -1:原因：支付错误,可能的原因：签名错误、未注册APPID、项目设置APPID不正确、注册的APPID与设置的不匹配、其他异常等
+     *                          -2: 原因 用户取消,无需处理。发生场景：用户不支付了，点击取消，返回APP
+     */
+    static unioinPay(params, callBack) {
+        NativeModules.JYPay.wxPay(params, callBack)
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.puti.paylib;
+package com.jy.paylib;
 
 import com.alipay.sdk.app.PayTask;
 import com.alipay.sdk.app.EnvUtils;
@@ -15,10 +15,6 @@ import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 
 import java.util.Map;
 
-/**
- * Created by puti on 2017/11/23.
- */
-
 public class PayModule extends ReactContextBaseJavaModule {
 
 
@@ -31,7 +27,7 @@ public class PayModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "PutiPay";
+        return "JYPay";
     }
 
     @ReactMethod
@@ -89,5 +85,29 @@ public class PayModule extends ReactContextBaseJavaModule {
         //发起请求
         api.sendReq(req);
     }
+
+    @ReactMethod
+        public void jyPay(ReadableMap params, final Callback callback) {
+            IWXAPI api = WXAPIFactory.createWXAPI(getCurrentActivity(), WX_APPID);
+            //data  根据服务器返回的json数据创建的实体类对象
+            PayReq req = new PayReq();
+            req.appId = WX_APPID;
+            req.partnerId = params.getString("partnerId");
+            req.prepayId = params.getString("prepayId");
+            req.packageValue = params.getString("packageValue");
+            req.nonceStr = params.getString("nonceStr");
+            req.timeStamp = params.getString("timeStamp");
+            req.sign = params.getString("sign");
+            api.registerApp(WX_APPID);
+            XWXPayEntryActivity.callback = new WXPayCallBack() {
+                @Override
+                public void callBack(WritableMap result) {
+                    callback.invoke(result);
+                }
+            };
+            //发起请求
+            api.sendReq(req);
+        }
+
 
 }

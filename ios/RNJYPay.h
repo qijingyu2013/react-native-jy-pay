@@ -5,7 +5,7 @@
 #import <React/RCTBridgeModule.h>
 #endif
 #import "WXApi.h"
-@interface RNPutiPay : NSObject <RCTBridgeModule,WXApiDelegate>
+@interface RNJYPay : NSObject <RCTBridgeModule,WXApiDelegate>
 
 @end
-  
+

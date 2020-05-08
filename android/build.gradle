@@ -5,12 +5,12 @@ def safeExtGet(prop, fallback) {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 23)
-    buildToolsVersion safeExtGet('buildToolsVersion', '23.0.1')
+    compileSdkVersion safeExtGet('compileSdkVersion', 25)
+    buildToolsVersion safeExtGet('buildToolsVersion', '25.0.1')
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 22)
+        targetSdkVersion safeExtGet('targetSdkVersion', 25)
         versionCode 1
         versionName "1.0"
     }
@@ -25,6 +25,9 @@ android {
 dependencies {
     compile 'com.facebook.react:react-native:+'
     // From node_modules
-    compile files('libs/alipaySdk-20180601.jar')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//     compile fileTree(dir: 'libs', include: '*.jar')
+//     compile files('libs/alipaySdk-20180601.jar')
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile(name: 'qmf-ppplugin-android-3.0.6', ext: 'aar')
 }

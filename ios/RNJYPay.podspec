@@ -2,14 +2,14 @@ require "json"
 package = JSON.parse(File.read('../package.json'))
 
 Pod::Spec.new do |s|
-  s.name         = 'RNPutiPay'
+  s.name         = 'RNJYPay'
   s.version      = package['version']
   s.summary      = package['description']
   s.requires_arc = true
   s.license      = "MIT"
-  s.homepage     = "https://github.com/puti94/react-native-puti-pay"
-  s.source       = { :git => "https://github.com/puti94/react-native-puti-pay", :tag => "master" }
-  s.author       = "puti94"
+  s.homepage     = "https://github.com/qijingyu2013/react-native-jy-pay"
+  s.source       = { :git => "https://github.com/qijingyu2013/react-native-jy-pay", :tag => "master" }
+  s.author       = "qijingyu2013"
   s.source_files = "**/*.{h,m}"
   s.platform     = :ios, "8.0"
 

@@ -1,8 +1,8 @@
 
-#import "RNPutiPay.h"
+#import "RNJYPay.h"
 #import <AlipaySDK/AlipaySDK.h>
 
-@implementation RNPutiPay
+@implementation RNJYPay
 {
     NSString *wxOpenId;
     NSString *alipayScheme;
@@ -10,7 +10,7 @@
     RCTResponseSenderBlock alipayCallBack;
 }
 
-RCT_EXPORT_MODULE(PutiPay)
+RCT_EXPORT_MODULE(JYPay)
 
 - (instancetype)init
 {

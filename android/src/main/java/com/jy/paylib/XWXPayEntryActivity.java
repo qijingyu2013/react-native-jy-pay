@@ -1,4 +1,4 @@
-package com.puti.paylib;
+package com.jy.paylib;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.puti.paylib;
+package com.jy.paylib;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
@@ -9,10 +9,6 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-/**
- * Created by puti on 2017/11/23.
- */
 
 public class PayReactPackage implements ReactPackage {
     @Override
