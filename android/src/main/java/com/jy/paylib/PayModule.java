@@ -12,6 +12,11 @@ import com.facebook.react.bridge.WritableMap;
 import com.tencent.mm.opensdk.modelpay.PayReq;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+//import org.json.JSONException;
+//import org.json.JSONObject;
+//import com.unionpay.UPPayAssistEx;
+//import android.util.Log;
+
 
 import java.util.Map;
 
@@ -59,6 +64,20 @@ public class PayModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void unionPay(String appPayRequest, final Callback promise) {
+        // 云闪付
+//        String tn = "空";
+//        try {
+//            JSONObject e = new JSONObject(appPayRequest);
+//            tn = e.getString("tn");
+//        } catch (JSONException e1) {
+//            e1.printStackTrace();
+//        }
+////        UPPayAssistEx.startPay (this, null, null, tn, "00");
+//        Log.d("test","云闪付支付 tn = " + tn);
+    }
+
+    @ReactMethod
     public void setWxId(String id) {
         WX_APPID = id;
     }
@@ -87,27 +106,27 @@ public class PayModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-        public void jyPay(ReadableMap params, final Callback callback) {
-            IWXAPI api = WXAPIFactory.createWXAPI(getCurrentActivity(), WX_APPID);
-            //data  根据服务器返回的json数据创建的实体类对象
-            PayReq req = new PayReq();
-            req.appId = WX_APPID;
-            req.partnerId = params.getString("partnerId");
-            req.prepayId = params.getString("prepayId");
-            req.packageValue = params.getString("packageValue");
-            req.nonceStr = params.getString("nonceStr");
-            req.timeStamp = params.getString("timeStamp");
-            req.sign = params.getString("sign");
-            api.registerApp(WX_APPID);
-            XWXPayEntryActivity.callback = new WXPayCallBack() {
-                @Override
-                public void callBack(WritableMap result) {
-                    callback.invoke(result);
-                }
-            };
-            //发起请求
-            api.sendReq(req);
-        }
+    public void jyPay(ReadableMap params, final Callback callback) {
+        IWXAPI api = WXAPIFactory.createWXAPI(getCurrentActivity(), WX_APPID);
+        //data  根据服务器返回的json数据创建的实体类对象
+        PayReq req = new PayReq();
+        req.appId = WX_APPID;
+        req.partnerId = params.getString("partnerId");
+        req.prepayId = params.getString("prepayId");
+        req.packageValue = params.getString("packageValue");
+        req.nonceStr = params.getString("nonceStr");
+        req.timeStamp = params.getString("timeStamp");
+        req.sign = params.getString("sign");
+        api.registerApp(WX_APPID);
+        XWXPayEntryActivity.callback = new WXPayCallBack() {
+            @Override
+            public void callBack(WritableMap result) {
+                callback.invoke(result);
+            }
+        };
+        //发起请求
+        api.sendReq(req);
+    }
 
 
 }

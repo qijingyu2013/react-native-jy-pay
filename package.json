@@ -1,6 +1,6 @@
 {
   "name": "react-native-jy-pay",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "银联、微信和支付宝支付的react-native模块",
   "main": "index.js",
   "scripts": {
