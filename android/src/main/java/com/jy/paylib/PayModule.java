@@ -12,10 +12,10 @@ import com.facebook.react.bridge.WritableMap;
 import com.tencent.mm.opensdk.modelpay.PayReq;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
-//import org.json.JSONException;
-//import org.json.JSONObject;
-//import com.unionpay.UPPayAssistEx;
-//import android.util.Log;
+import org.json.JSONException;
+import org.json.JSONObject;
+import com.unionpay.UPPayAssistEx;
+import android.util.Log;
 
 
 import java.util.Map;
@@ -66,15 +66,15 @@ public class PayModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void unionPay(String appPayRequest, final Callback promise) {
         // 云闪付
-//        String tn = "空";
-//        try {
-//            JSONObject e = new JSONObject(appPayRequest);
-//            tn = e.getString("tn");
-//        } catch (JSONException e1) {
-//            e1.printStackTrace();
-//        }
-////        UPPayAssistEx.startPay (this, null, null, tn, "00");
-//        Log.d("test","云闪付支付 tn = " + tn);
+        String tn = "空";
+        try {
+            JSONObject e = new JSONObject(appPayRequest);
+            tn = e.getString("tn");
+        } catch (JSONException e1) {
+            e1.printStackTrace();
+        }
+//        UPPayAssistEx.startPay (this, null, null, tn, "00");
+        Log.d("test","云闪付支付 tn = " + tn);
     }
 
     @ReactMethod
