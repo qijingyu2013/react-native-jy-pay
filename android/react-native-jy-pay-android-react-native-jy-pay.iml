@@ -90,10 +90,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jingyu.qi/Development/goease-front-end/GoeaseMobile/node_modules/react-native-jy-pay/android/libs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jingyu.qi/Development/goease-front-end/GoeaseMobile/node_modules/react-native-jy-pay/android/libs/UPPayPluginExPro.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jingyu.qi/Development/goease-front-end/GoeaseMobile/node_modules/react-native-jy-pay/android/libs/UPPayAssistEx.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jingyu.qi/Development/goease-front-end/GoeaseMobile/node_modules/react-native-jy-pay/android/libs/alipaySdk-20180601.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./../node_modules/react-native-jy-pay/android/libs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./../node_modules/react-native-jy-pay/android/libs/UPPayPluginExPro.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./../node_modules/react-native-jy-pay/android/libs/UPPayAssistEx.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./../node_modules/react-native-jy-pay/android/libs/alipaySdk-20180601.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.4@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.infer.annotation:infer-annotation:0.11.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
@@ -106,7 +106,7 @@
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jingyu.qi/Development/goease-front-end/GoeaseMobile/node_modules/react-native-jy-pay/android/libs/qmf-ppplugin-android-3.0.6.aar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./../node_modules/react-native-jy-pay/android/libs/qmf-ppplugin-android-3.0.6.aar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.react:react-native:0.61.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.fresco:fresco:2.0.0@aar" level="project" />
