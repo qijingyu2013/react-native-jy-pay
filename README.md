@@ -94,7 +94,7 @@ $ react-native link react-native-jy-pay
 
     // wxapi/WXPayEntryActivity.jave
     package com.自己包名.wxapi;
-    import com.puti.paylib.XWXPayEntryActivity;
+    import com.jy.paylib.XWXPayEntryActivity;
     public class WXPayEntryActivity extends XWXPayEntryActivity {
     }
 
