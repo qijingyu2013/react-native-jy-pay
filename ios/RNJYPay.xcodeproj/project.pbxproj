@@ -10,6 +10,7 @@
 		B3E7B58A1CC2AC0600A0062D /* RNJYPay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNJYPay.m */; };
 		C520E29621BAB60400769D4D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C520E29221BAB60300769D4D /* libWeChatSDK.a */; };
 		C520E31521BAC01100769D4D /* AlipaySDK in Frameworks */ = {isa = PBXBuildFile; fileRef = C520E31421BAC01100769D4D /* AlipaySDK */; };
+		D911C981246C1E2400E3DF44 /* libUMSPosPayOnly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D911C980246C1E2400E3DF44 /* libUMSPosPayOnly.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,15 @@
 		C520E31221BABFDE00769D4D /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		C520E31321BABFDE00769D4D /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		C520E31421BAC01100769D4D /* AlipaySDK */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = AlipaySDK; path = AlipaySDK.framework/AlipaySDK; sourceTree = "<group>"; };
+		D911C978246C1E2200E3DF44 /* UMSPPPayUnifyPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSPPPayUnifyPayPlugin.h; sourceTree = "<group>"; };
+		D911C979246C1E2200E3DF44 /* UMSPPPayFastPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSPPPayFastPay.h; sourceTree = "<group>"; };
+		D911C97A246C1E2200E3DF44 /* UMSPPPayOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSPPPayOrder.h; sourceTree = "<group>"; };
+		D911C97B246C1E2200E3DF44 /* UMSPPPayVersionsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSPPPayVersionsInfo.h; sourceTree = "<group>"; };
+		D911C97C246C1E2200E3DF44 /* UMSPPPayPluginSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSPPPayPluginSettings.h; sourceTree = "<group>"; };
+		D911C97D246C1E2200E3DF44 /* UMSPPPayPosPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSPPPayPosPay.h; sourceTree = "<group>"; };
+		D911C97E246C1E2200E3DF44 /* UMSSecKeyboardLibResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSSecKeyboardLibResource.bundle; sourceTree = "<group>"; };
+		D911C97F246C1E2200E3DF44 /* PosPay_Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PosPay_Resource.bundle; sourceTree = "<group>"; };
+		D911C980246C1E2400E3DF44 /* libUMSPosPayOnly.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSPosPayOnly.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 			files = (
 				C520E31521BAC01100769D4D /* AlipaySDK in Frameworks */,
 				C520E29621BAB60400769D4D /* libWeChatSDK.a in Frameworks */,
+				D911C981246C1E2400E3DF44 /* libUMSPosPayOnly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +113,7 @@
 		C520E2E921BABFDE00769D4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D911C966246C1D8500E3DF44 /* libUMSUnifyPay */,
 				C520E31421BAC01100769D4D /* AlipaySDK */,
 				C520E31321BABFDE00769D4D /* AlipaySDK.bundle */,
 				C520E31221BABFDE00769D4D /* AlipaySDK.framework */,
@@ -230,6 +242,30 @@
 			path = inspectionProfiles;
 			sourceTree = "<group>";
 		};
+		D911C966246C1D8500E3DF44 /* libUMSUnifyPay */ = {
+			isa = PBXGroup;
+			children = (
+				D911C977246C1E2200E3DF44 /* include */,
+				D911C980246C1E2400E3DF44 /* libUMSPosPayOnly.a */,
+				D911C97F246C1E2200E3DF44 /* PosPay_Resource.bundle */,
+				D911C97E246C1E2200E3DF44 /* UMSSecKeyboardLibResource.bundle */,
+			);
+			path = libUMSUnifyPay;
+			sourceTree = "<group>";
+		};
+		D911C977246C1E2200E3DF44 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D911C978246C1E2200E3DF44 /* UMSPPPayUnifyPayPlugin.h */,
+				D911C979246C1E2200E3DF44 /* UMSPPPayFastPay.h */,
+				D911C97A246C1E2200E3DF44 /* UMSPPPayOrder.h */,
+				D911C97B246C1E2200E3DF44 /* UMSPPPayVersionsInfo.h */,
+				D911C97C246C1E2200E3DF44 /* UMSPPPayPluginSettings.h */,
+				D911C97D246C1E2200E3DF44 /* UMSPPPayPosPay.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +305,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -396,6 +433,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libUMSUnifyPay",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNJYPay;
@@ -419,6 +457,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libUMSUnifyPay",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNJYPay;
