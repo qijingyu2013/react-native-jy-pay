@@ -1,19 +1,20 @@
 {
   "name": "react-native-jy-pay",
-  "version": "1.5.34",
-  "description": "银联、微信和支付宝支付的react-native模块",
+  "version": "1.5.35",
+  "description": "微信和支付宝支付的react-native模块",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native",
+    "react",
+    "native",
     "rn",
     "wechat",
     "alipay",
-    "union",
     "pay",
-    "jy"
+    "jy",
+    "react-native"
   ],
   "repository": {
     "type": "git",

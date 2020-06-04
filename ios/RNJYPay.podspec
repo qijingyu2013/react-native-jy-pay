@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.license      = "MIT"
   s.homepage     = "https://github.com/qijingyu2013/react-native-jy-pay"
-  s.source       = { :git => "https://github.com/qijingyu2013/react-native-jy-pay", :tag => "master" }
+  s.source       = { :git => "https://github.com/qijingyu2013/react-native-jy-pay", :tag => "1.0.0" }
   s.author       = "qijingyu2013"
   s.source_files = "**/*.{h,m}"
   s.platform     = :ios, "8.0"
