@@ -88,14 +88,14 @@ $ react-native link react-native-jy-pay
 
 #### Android
 
-在包名目录下创建wxapi文件夹，新建一个名为`WXPayEntryActivity`的activity继承 `com.jy.paylib`包名下的`XWXPayEntryActivity`。
+在包名目录下创建wxapi文件夹，新建一个名为`WXPayEntryActivity`的activity继承 `com.jy.paylib`包名下的`JYWXPayEntryActivity`。
 
 ```
 
-    // wxapi/WXPayEntryActivity.jave
+    // wxapi/WJYPayEntryActivity.jave
     package com.自己包名.wxapi;
-    import com.jy.paylib.XWXPayEntryActivity;
-    public class WXPayEntryActivity extends XWXPayEntryActivity {
+    import com.jy.paylib.XWJYPayEntryActivity;
+    public class WXPayEntryActivity extends JYWXPayEntryActivity {
     }
 
    并配置Android Manifest XML
@@ -119,17 +119,17 @@ $ react-native link react-native-jy-pay
 ## Usage
 
 ```javascript
-      import XPay from 'react-native-jy-pay'
+      import JYPay from 'react-native-jy-pay'
 
         //设置微信ID
-        XPay.setWxId(id)
+        JYPay.setWxId(id)
         //设置    支付宝URL Schemes
-        XPay.setAlipayScheme(scheme)
+        JYPay.setAlipayScheme(scheme)
         //支付宝开启沙箱模式 仅限安卓
-        XPay.setAlipaySandbox(isSandBox)
+        JYPay.setAlipaySandbox(isSandBox)
         //支付宝支付
         //orderInfo是后台拼接好的支付参数
-        XPay.alipay(orderInfo,(res)=>console.log(res))
+        JYPay.alipay(orderInfo,(res)=>console.log(res))
         //微信支付
         //这些参数都是由后台生成的
         let params = {
@@ -140,7 +140,7 @@ $ react-native link react-native-jy-pay
           timeStamp: timeStamp,
           sign: sign,
        }
-        XPay.wxPay(params,(res)=>console.log(res))
+        JYPay.wJYPay(params,(res)=>console.log(res))
 ```
 
 ## Issues
@@ -170,5 +170,5 @@ $ react-native link react-native-jy-pay
    ```
 
 2. ios 支付完没有返回商家按钮
-   ios应用间跳转判断跳转到哪个应用是通过上面ios配置第三部设置的URL Scheme区分的。`XPay.setWxId()`，`XPay.setAlipayScheme()` 方法都是通过支付的sdk将Scheme传给微信支付宝，支付成功后才能正确跳转回应用，也才有返回商家按钮
+   ios应用间跳转判断跳转到哪个应用是通过上面ios配置第三部设置的URL Scheme区分的。`JYPay.setWxId()`，`JYPay.setAlipayScheme()` 方法都是通过支付的sdk将Scheme传给微信支付宝，支付成功后才能正确跳转回应用，也才有返回商家按钮
    所有要是没有此功能，请再对照文档检查一遍

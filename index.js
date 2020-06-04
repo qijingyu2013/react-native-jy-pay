@@ -5,7 +5,7 @@
  */
 import {NativeModules, Platform} from 'react-native'
 
-export default class XPay {
+export default class JYPay {
 
     /**
      * 支付宝Android端支付
@@ -67,24 +67,22 @@ export default class XPay {
 
     /**
      * 银联支付
-     * 传入参数示例
-     * {
-        partnerId:data.partnerId,
-        prepayId: data.prepayId,
-        packageValue: data.data.packageValue,
-        nonceStr: data.data.nonceStr,
-        timeStamp: data.data.timeStamp,
-        sign: data.data.sign,
-       }
      *
      *
-     * @param params  参数
+     * @param tn  参数 string
      * @param callBack 回调结果码 0:支付成功,
      *                          -1:原因：支付错误,可能的原因：签名错误、未注册APPID、项目设置APPID不正确、注册的APPID与设置的不匹配、其他异常等
      *                          -2: 原因 用户取消,无需处理。发生场景：用户不支付了，点击取消，返回APP
      */
-    static unioinPay(params, callBack) {
-        NativeModules.JYPay.wxPay(params, callBack)
-    }
+    // static unionPay(tn, callBack) {
+    //     NativeModules.JYPay.unionPay(tn, callBack)
+    // }
 
+    // static unionAliPay(tn, callBack) {
+    //     NativeModules.JYPay.unionAliPay(tn, callBack)
+    // }
+    //
+    // static unionWXPay(tn, callBack) {
+    //     NativeModules.JYPay.unionWXPay(tn, callBack)
+    // }
 }
