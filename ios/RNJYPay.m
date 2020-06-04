@@ -1,16 +1,13 @@
 
 #import "RNJYPay.h"
 #import <AlipaySDK/AlipaySDK.h>
-#import <AlipaySDK/AlipaySDK.h>
 
 @implementation RNJYPay
 {
     NSString *wxOpenId;
     NSString *alipayScheme;
-    NSString *unionPayScheme;
     RCTResponseSenderBlock wxCallBack;
     RCTResponseSenderBlock alipayCallBack;
-    RCTResponseSenderBlock unionPayCallBack;
 }
 
 RCT_EXPORT_MODULE(JYPay)
@@ -58,17 +55,15 @@ RCT_EXPORT_METHOD(setWxId:(NSString *)wxid){
 RCT_EXPORT_METHOD(setAlipayScheme:(NSString *)scheme){
     alipayScheme = scheme;
 }
-RCT_EXPORT_METHOD(setUnionPayScheme:(NSString *)scheme){
-    unionPayScheme = scheme;
-}
+
 RCT_EXPORT_METHOD(alipay:(NSString *)info callback:(RCTResponseSenderBlock)callback)
 {
     alipayCallBack = callback;
     dispatch_async(dispatch_get_main_queue(), ^{
-        
+
         [[AlipaySDK defaultService] payOrder:info fromScheme:alipayScheme callback:^(NSDictionary *resultDic) {
             NSLog(@"alipay:callback");
-            
+
             callback([[NSArray alloc] initWithObjects:resultDic, nil]);
         }];
     });
@@ -76,7 +71,7 @@ RCT_EXPORT_METHOD(alipay:(NSString *)info callback:(RCTResponseSenderBlock)callb
 
 RCT_EXPORT_METHOD(wxPay:(NSDictionary *)params  callback:(RCTResponseSenderBlock)callback)
 {
-    
+
     NSLog(@"wxPay:%@", params);
     //需要创建这个支付对象
     PayReq *req   = [[PayReq alloc] init];
@@ -103,22 +98,22 @@ RCT_EXPORT_METHOD(wxPay:(NSDictionary *)params  callback:(RCTResponseSenderBlock
     wxCallBack = callback;
 }
 
-RCT_EXPORT_METHOD(unionPay:(NSDictionary *)responseDic callback:(RCTResponseSenderBlock)callback)
-{
-    unionPayCallBack = callback;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSString *payDataJsonStr = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:responseDic[@"appPayRequest"] options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
-        // 通过url 呼云闪付
-        [[UMSPPPayUnifyPayPlugin handleOpenURL: url] cloudPayWithURLSchemes:@"unifyPayDemo"
-                                                                    payData:payDataJsonStr
-                                                             viewController:self
-                                                              callbackBlock:^(NSString *resultCode, NSString *resultInfo) {
-            [self showAlertWithTitle:[NSString stringWithFormat:@"resultCode = %@\nresultInfo = %@", resultCode, resultInfo]];
-            NSLog(@"unionPay:callback");
-//            callback([[NSArray alloc] initWithObjects:resultDic, nil]);
-        }];
-    });
-}
+// RCT_EXPORT_METHOD(unionPay:(NSDictionary *)responseDic callback:(RCTResponseSenderBlock)callback)
+// {
+//     unionPayCallBack = callback;
+//     dispatch_async(dispatch_get_main_queue(), ^{
+//         NSString *payDataJsonStr = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:responseDic[@"appPayRequest"] options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+//         // 通过url 呼云闪付
+//         [[UMSPPPayUnifyPayPlugin handleOpenURL: url] cloudPayWithURLSchemes:@"unifyPayDemo"
+//                                                                     payData:payDataJsonStr
+//                                                              viewController:self
+//                                                               callbackBlock:^(NSString *resultCode, NSString *resultInfo) {
+//             [self showAlertWithTitle:[NSString stringWithFormat:@"resultCode = %@\nresultInfo = %@", resultCode, resultInfo]];
+//             NSLog(@"unionPay:callback");
+// //            callback([[NSArray alloc] initWithObjects:resultDic, nil]);
+//         }];
+//     });
+// }
 
 - (void)onReq:(BaseReq *)req{
     NSLog(@"onReq%@",req);
@@ -138,4 +133,4 @@ RCT_EXPORT_METHOD(unionPay:(NSDictionary *)responseDic callback:(RCTResponseSend
     }
 }
 @end
-  
+
